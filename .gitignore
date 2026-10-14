@@ -1,0 +1,13 @@
+# dependências e builds
+node_modules/
+dist/
+out/
+
+# recursos gerados para o vídeo tutorial (capturas, narração e música — pesados)
+remotion-assets/
+
+# configurações locais
+.claude/
+*.log
+.DS_Store
+Thumbs.db

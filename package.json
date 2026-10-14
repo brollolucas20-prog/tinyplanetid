@@ -1,0 +1,41 @@
+{
+  "name": "tiny-planet-industries",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "studio": "remotion studio src/remotion/index.ts",
+    "render:trailer": "remotion render src/remotion/index.ts Trailer out/trailer.mp4 --gl=angle",
+    "render:stills": "remotion render src/remotion/index.ts Trailer out/frames --frames=30,150,300,450 --image-format=png --gl=angle"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.1",
+    "@remotion/google-fonts": "4.0.535",
+    "@remotion/media": "4.0.535",
+    "@remotion/player": "4.0.535",
+    "@remotion/three": "4.0.535",
+    "lucide-react": "^1.57.0",
+    "react": "19.2.9",
+    "react-dom": "19.2.9",
+    "remotion": "4.0.535",
+    "simplex-noise": "^4.0.3",
+    "three": "^0.186.1",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@remotion/cli": "4.0.535",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.186.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "puppeteer-core": "^24.43.1",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.4"
+  }
+}
